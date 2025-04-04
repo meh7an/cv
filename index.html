@@ -143,7 +143,7 @@
       <section id="summary">
         <h2>Professional Summary</h2>
         <p>
-          JavaScript and TypeScript developer with +4 years of personal
+          JavaScript and TypeScript developer with <span id="experience-years">+6</span> years of personal
           experience in ReactJS, Next.js, and Node.js. Developed multiple
           successful projects including two blogs, an e-commerce music sheets
           website, and an award-winning SSH Terminal Mini-App. Strong focus on
@@ -416,4 +416,10 @@
       </section>
     </div>
   </body>
+  <script>
+    const startYear = 2018;
+    const currentYear = new Date().getFullYear();
+    const yearsOfExperience = currentYear - startYear;
+    document.getElementById('experience-years').textContent = `+${yearsOfExperience}`;
+  </script>
 </html>
